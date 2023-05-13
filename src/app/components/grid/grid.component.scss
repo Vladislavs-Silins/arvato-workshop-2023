@@ -1,0 +1,22 @@
+.wrapper {
+  @apply flex justify-start items-center
+  p-10;
+  .demo-container {
+    @apply flex justify-center items-center gap-4
+  bg-gray-200
+  border border-gray-300
+  w-max
+  rounded
+  p-8 mb-8;
+  }
+
+  .demo-block {
+    @apply flex justify-center items-center
+  w-24 h-24
+  bg-gray-600
+  text-white
+  font-bold
+  rounded
+  shadow-md;
+  }
+}
