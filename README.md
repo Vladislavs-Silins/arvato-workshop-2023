@@ -19,3 +19,8 @@ Run `npx nx connect-to-nx-cloud` to enable [remote caching](https://nx.app) and 
 ## Further help
 
 Visit the [Nx Documentation](https://nx.dev) to learn more.
+
+## Notes
+
+Use `--legacy-peer-deps` to install dependencies. 
+[Stackoverflow tread](https://stackoverflow.com/questions/71066810/could-not-resolve-peer-dependency-between-my-angular-app-and-my-custom-angular-l)
