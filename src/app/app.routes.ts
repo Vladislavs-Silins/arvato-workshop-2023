@@ -9,6 +9,6 @@ export const appRoutes: Route[] = [
   { path: 'grid', component: GridComponent },
   { path: 'avif', component: AvifComponent },
   { path: 'has', component: HasComponent },
-  { path: 'hasdivs', component: HasDivsComponent },
+  { path: 'has-divs', component: HasDivsComponent },
   { path: 'where', component: WhereComponent },
 ];
