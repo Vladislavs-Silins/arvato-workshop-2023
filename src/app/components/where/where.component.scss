@@ -1,0 +1,50 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #333;
+
+  article {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+    padding: 20px;
+    width: 80%;
+    max-width: 600px;
+
+    .description {
+      font-size: 18px;
+      color: #666;
+      margin-bottom: 20px;
+    }
+  }
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+
+  .is-styling a:hover,
+  .where-styling a:hover {
+    text-decoration: underline;
+  }
+
+  p {
+    line-height: 1.6;
+  }
+
+  :is(section.is-styling, aside.is-styling, footer.is-styling) a {
+    color: #ff6347;
+  }
+
+  :where(section.where-styling, aside.where-styling, footer.where-styling) a {
+    color: orange;
+  }
+
+  //article footer a {
+  //  color: blue;
+  //}
+}
