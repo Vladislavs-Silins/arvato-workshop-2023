@@ -1,0 +1,33 @@
+.wrapper {
+  @apply flex justify-center items-center h-screen bg-gradient-to-r from-yellow-300 to-green-300  text-blue-400;
+  div {
+    @apply bg-white p-8 rounded-lg shadow-md border border-gray-300;
+    div {
+      @apply border p-4 border-gray-200 rounded text-2xl font-semibold;
+    }
+
+    div:not(last-of-type) {
+      @apply mb-4;
+    }
+  }
+
+  //div {
+  //  @apply bg-blue-400 text-white;
+  //}
+
+  //div > div {
+  //  @apply bg-blue-400 text-white;
+  //}
+
+  //div:has(> div) {
+  //  @apply bg-blue-400;
+  //}
+
+  //div + div {
+  //  @apply bg-blue-400 text-white;
+  //}
+
+  //div:has(+ div) {
+  //  @apply bg-blue-400 text-white;
+  //}
+}

@@ -6,6 +6,7 @@ import { GridComponent } from './components/grid/grid.component';
 import { AvifComponent } from './components/avif/avif.component';
 import { HasComponent } from './components/has/has.component';
 import { WhereComponent } from './components/where/where.component';
+import { HasDivsComponent } from './components/has-divs/has-divs.component';
 
 
 @NgModule({
@@ -13,7 +14,8 @@ import { WhereComponent } from './components/where/where.component';
     GridComponent,
     AvifComponent,
     HasComponent,
-    WhereComponent
+    WhereComponent,
+    HasDivsComponent
   ],
   imports: [
     CommonModule,
