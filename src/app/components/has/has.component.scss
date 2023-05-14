@@ -38,3 +38,27 @@ form {
     @apply w-[280px] px-4 py-2 mt-4 bg-indigo-500 text-white font-semibold rounded-lg shadow-md hover:bg-indigo-700 active:bg-indigo-800 focus:outline-none;
   }
 }
+
+form:has(.form-input:invalid) {
+  .form-group {
+    .form-input {
+      border-color: #dc3545;
+    }
+  }
+}
+
+form:has(.form-input:valid) {
+  .form-group {
+    .form-input {
+      border-color: #28a745;
+    }
+  }
+}
+
+form:has(.form-input:placeholder-shown) {
+  .form-group {
+    .form-input {
+      border-color: #ffc107;
+    }
+  }
+}
