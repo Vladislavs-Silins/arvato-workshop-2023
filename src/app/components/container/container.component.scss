@@ -1,0 +1,9 @@
+.wrapper {
+  @apply flex justify-center items-center h-screen bg-gradient-to-r from-yellow-100 to-green-100  text-white;
+  .container {
+    @apply bg-white p-8 rounded-lg shadow-md border border-gray-300;
+    section {
+      @apply bg-blue-400 border p-4 border-gray-200 rounded text-4xl font-semibold;
+    }
+  }
+}
