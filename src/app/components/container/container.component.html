@@ -1,5 +1,23 @@
 <div class="wrapper">
   <div class="container">
-    <section>Hello world!</section>
+    <section>
+      <p>This is a block of text inside a container.</p>
+      <p>
+        This container's width is based on the size of its parent, but its
+        layout is independent.
+      </p>
+    </section>
+    <section class="units">
+      <p>The container query length units are:</p>
+      <ul>
+        <li>cqw: 1% of a query container's width</li>
+        <li>cqh: 1% of a query container's height</li>
+        <li>cqi: 1% of a query container's inline size</li>
+        <li>cqb: 1% of a query container's block size</li>
+        <li>cqmin: The smaller value of either cqi or cqb</li>
+        <li>cqmax: The larger value of either cqi or cqb</li>
+      </ul>
+      <p>This block has width 75cqw.</p>
+    </section>
   </div>
 </div>
