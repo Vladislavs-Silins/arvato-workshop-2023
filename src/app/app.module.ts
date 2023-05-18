@@ -8,7 +8,8 @@ import { HasComponent } from './components/has/has.component';
 import { WhereComponent } from './components/where/where.component';
 import { HasDivsComponent } from './components/has-divs/has-divs.component';
 import { ContainerComponent } from './components/container/container.component';
-
+import { ViewTransitionsComponent } from './components/view-transitions/view-transitions.component';
+import { BrowserModule } from '@angular/platform-browser';
 
 @NgModule({
   declarations: [
@@ -17,11 +18,9 @@ import { ContainerComponent } from './components/container/container.component';
     HasComponent,
     WhereComponent,
     HasDivsComponent,
-    ContainerComponent
+    ContainerComponent,
+    ViewTransitionsComponent,
   ],
-  imports: [
-    CommonModule,
-    AppRoutingModule
-  ]
+  imports: [BrowserModule, AppRoutingModule],
 })
-export class AppModule { }
+export class AppModule {}

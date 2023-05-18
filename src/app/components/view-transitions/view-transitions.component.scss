@@ -1,0 +1,87 @@
+figure {
+  @apply m-0;
+}
+
+body {
+  @apply w-[70%] max-w-[700px] m-auto;
+}
+
+main {
+  @apply flex;
+}
+
+img {
+  @apply border border-gray-400;
+}
+
+.thumbs img {
+  @apply block my-2 rounded opacity-70;
+}
+
+a {
+  @apply outline-none;
+}
+
+.thumbs a:hover img,
+.thumbs a:focus img {
+  @apply opacity-100;
+}
+
+.thumbs img:first-child {
+  @apply mt-0;
+}
+
+.gallery-view img {
+  @apply w-full mr-2 rounded;
+}
+
+footer,
+figcaption {
+  @apply absolute p-2 bg-white bg-opacity-50;
+}
+
+footer {
+  @apply bottom-1 left-1;
+}
+
+figure {
+  @apply relative;
+}
+
+figcaption {
+  @apply top-0 right-0 border border-gray-400 rounded rounded-l-none rounded-b-none;
+}
+
+h1,
+figcaption,
+a {
+  font-family: 'Roboto Slab', serif;
+}
+
+h1 {
+  @apply text-center;
+}
+
+@media (max-width: 980px) {
+  body {
+    @apply w-[90%];
+  }
+}
+
+@media (max-width: 700px) {
+  body {
+    @apply w-[98%];
+  }
+
+  main {
+    @apply flex-col;
+  }
+
+  .thumbs {
+    @apply flex items-center justify-between;
+  }
+
+  .thumbs img {
+    @apply m-0 mb-2;
+  }
+}

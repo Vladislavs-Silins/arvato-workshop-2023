@@ -1,0 +1,28 @@
+<h1 class="title">Basic View Transitions API demo</h1>
+
+<main>
+  <section class="thumbs">
+    <a
+      *ngFor="let data of imageData"
+      href="#"
+      title="Click to load image in main gallery view"
+      (click)="updateView($event, data)"
+    >
+      <img [alt]="data.name" [src]="getImagePath(data.file, true)" />
+    </a>
+  </section>
+  <section class="gallery-view">
+    <figure>
+      <img [src]="getImagePath(selectedImage.file, false)" />
+      <figcaption>
+        <div class="caption-text">{{ selectedImage.name }}</div>
+      </figcaption>
+    </figure>
+  </section>
+</main>
+
+<footer class="footer">
+  <a href="https://glitch.com/edit/#!/basic-view-transitions-api">
+    See source code
+  </a>
+</footer>
