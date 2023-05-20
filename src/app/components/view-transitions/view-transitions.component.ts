@@ -1,5 +1,12 @@
-import { Component, ViewEncapsulation } from '@angular/core';
-import { CommonModule } from '@angular/common';
+import {
+  Component,
+  ElementRef,
+  inject,
+  NgZone,
+  Renderer2,
+  ViewEncapsulation,
+} from '@angular/core';
+import { CommonModule, DOCUMENT } from '@angular/common';
 
 @Component({
   selector: 'workshop2023-view-transitions',
@@ -21,13 +28,76 @@ export class ViewTransitionsComponent {
     { name: 'The view across the water', file: 'watery-view' },
   ];
 
+  private readonly document = inject<
+    Document & { startViewTransition: (callback: () => void) => void }
+  >(DOCUMENT);
+
+  constructor(
+    private renderer: Renderer2,
+    private el: ElementRef,
+    private ngZone: NgZone
+  ) {}
+
   public getImagePath(fileName: string, isThumbnail: boolean): string {
-    console.log(`${this.cdnURL}/${fileName}${isThumbnail ? '_th' : ''}.jpg`);
     return `${this.cdnURL}/${fileName}${isThumbnail ? '_th' : ''}.jpg`;
   }
 
   public updateView(event: MouseEvent, data: any): void {
     event.preventDefault();
-    this.selectedImage = data;
+    this.displayNewImage(data);
+    return;
+    // const document = this.document;
+    // const startViewTransition: any = (document as any)['startViewTransition'];
+    // // Fallback for browsers that don't support View Transitions:
+    // if (!startViewTransition) {
+    //   this.displayNewImage(data);
+    //   return;
+    // }
+    // this.ngZone.runOutsideAngular(() => {
+    //   startViewTransition(() => {
+    //     // Get a reference to the img element.
+    //     // const imageElement =
+    //     //   this.el.nativeElement.querySelector('.gallery-view img');
+    //     //
+    //     // // Update the src attribute.
+    //     // const newImagePath = this.getImagePath(data.file, false);
+    //     // this.renderer.setAttribute(imageElement, 'src', newImagePath);
+    //     const imageElement = document.querySelector('.gallery-view img');
+    //
+    //     // Update the src attribute.
+    //     const newImagePath = this.getImagePath(data.file, false);
+    //     (imageElement as any).src = newImagePath;
+    //   });
+    //   // if (!this.document.startViewTransition) {
+    //   //   this.ngZone.run(() => {
+    //   //     void this.router.navigate(['detail', '42']);
+    //   //   });
+    //   // }
+    // });
+    //
+    // // With View Transitions:
+    // startViewTransition(() => {
+    //   // Get a reference to the img element.
+    //   // const imageElement =
+    //   //   this.el.nativeElement.querySelector('.gallery-view img');
+    //   //
+    //   // // Update the src attribute.
+    //   // const newImagePath = this.getImagePath(data.file, false);
+    //   // this.renderer.setAttribute(imageElement, 'src', newImagePath);
+    //   const imageElement = document.querySelector('.gallery-view img');
+    //
+    //   // Update the src attribute.
+    //   const newImagePath = this.getImagePath(data.file, false);
+    //   (imageElement as any).src = newImagePath;
+    // });
+  }
+
+  private displayNewImage(data: any) {
+    // this.selectedImage = data;
+    const imageElement = document.querySelector('.gallery-view img');
+
+    // Update the src attribute.
+    const newImagePath = this.getImagePath(data.file, false);
+    (imageElement as any).src = newImagePath;
   }
 }

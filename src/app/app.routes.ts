@@ -6,6 +6,7 @@ import { WhereComponent } from './components/where/where.component';
 import { HasDivsComponent } from './components/has-divs/has-divs.component';
 import { ContainerComponent } from './components/container/container.component';
 import { ViewTransitionsComponent } from './components/view-transitions/view-transitions.component';
+import { ViewTransitionDemoComponent } from './components/view-transition-demo/view-transition-demo.component';
 
 export const appRoutes: Route[] = [
   { path: 'grid', component: GridComponent },
@@ -15,4 +16,5 @@ export const appRoutes: Route[] = [
   { path: 'where', component: WhereComponent },
   { path: 'container', component: ContainerComponent },
   { path: 'view-transitions', component: ViewTransitionsComponent },
+  { path: 'view-transition-demo', component: ViewTransitionDemoComponent },
 ];

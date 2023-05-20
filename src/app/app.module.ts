@@ -10,6 +10,7 @@ import { HasDivsComponent } from './components/has-divs/has-divs.component';
 import { ContainerComponent } from './components/container/container.component';
 import { ViewTransitionsComponent } from './components/view-transitions/view-transitions.component';
 import { BrowserModule } from '@angular/platform-browser';
+import { ViewTransitionDemoComponent } from './components/view-transition-demo/view-transition-demo.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { BrowserModule } from '@angular/platform-browser';
     HasDivsComponent,
     ContainerComponent,
     ViewTransitionsComponent,
+    ViewTransitionDemoComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
 })
