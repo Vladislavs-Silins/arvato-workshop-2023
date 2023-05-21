@@ -8,9 +8,7 @@ import { HasComponent } from './components/has/has.component';
 import { WhereComponent } from './components/where/where.component';
 import { HasDivsComponent } from './components/has-divs/has-divs.component';
 import { ContainerComponent } from './components/container/container.component';
-import { ViewTransitionsComponent } from './components/view-transitions/view-transitions.component';
 import { BrowserModule } from '@angular/platform-browser';
-import { ViewTransitionDemoComponent } from './components/view-transition-demo/view-transition-demo.component';
 
 @NgModule({
   declarations: [
@@ -20,8 +18,6 @@ import { ViewTransitionDemoComponent } from './components/view-transition-demo/v
     WhereComponent,
     HasDivsComponent,
     ContainerComponent,
-    ViewTransitionsComponent,
-    ViewTransitionDemoComponent,
   ],
   imports: [BrowserModule, AppRoutingModule],
 })

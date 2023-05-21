@@ -5,7 +5,6 @@ import { HasComponent } from './components/has/has.component';
 import { WhereComponent } from './components/where/where.component';
 import { HasDivsComponent } from './components/has-divs/has-divs.component';
 import { ContainerComponent } from './components/container/container.component';
-import { ViewTransitionsComponent } from './components/view-transitions/view-transitions.component';
 import { ViewTransitionDemoComponent } from './components/view-transition-demo/view-transition-demo.component';
 
 export const appRoutes: Route[] = [
@@ -15,6 +14,5 @@ export const appRoutes: Route[] = [
   { path: 'has-divs', component: HasDivsComponent },
   { path: 'where', component: WhereComponent },
   { path: 'container', component: ContainerComponent },
-  { path: 'view-transitions', component: ViewTransitionsComponent },
-  { path: 'view-transition-demo', component: ViewTransitionDemoComponent },
+  { path: 'view-transition', component: ViewTransitionDemoComponent },
 ];

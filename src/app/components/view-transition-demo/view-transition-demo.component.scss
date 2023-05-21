@@ -1,0 +1,15 @@
+.container {
+  @apply flex justify-center items-start;
+}
+
+.menu {
+  @apply mr-4;
+}
+
+.menu-button {
+  @apply bg-blue-300 text-white rounded px-4 py-2 m-2 transition-colors duration-500 ease-in-out hover:bg-blue-600 w-full;
+}
+
+.iframe {
+  @apply border border-gray-300 rounded w-full h-[100vh];
+}
