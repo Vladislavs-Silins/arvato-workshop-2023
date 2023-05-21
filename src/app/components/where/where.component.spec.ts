@@ -8,7 +8,7 @@ describe('WhereComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [WhereComponent]
+      declarations: [WhereComponent],
     });
     fixture = TestBed.createComponent(WhereComponent);
     component = fixture.componentInstance;

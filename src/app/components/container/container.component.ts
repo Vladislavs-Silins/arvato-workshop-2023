@@ -4,8 +4,6 @@ import { Component, ViewEncapsulation } from '@angular/core';
   selector: 'workshop2023-container',
   templateUrl: './container.component.html',
   styleUrls: ['./container.component.scss'],
-  encapsulation: ViewEncapsulation.Emulated
+  encapsulation: ViewEncapsulation.Emulated,
 })
-export class ContainerComponent {
-
-}
+export class ContainerComponent {}

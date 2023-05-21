@@ -4,8 +4,6 @@ import { Component, ViewEncapsulation } from '@angular/core';
   selector: 'workshop2023-has',
   templateUrl: './has.component.html',
   styleUrls: ['./has.component.scss'],
-  encapsulation: ViewEncapsulation.Emulated
+  encapsulation: ViewEncapsulation.Emulated,
 })
-export class HasComponent {
-
-}
+export class HasComponent {}

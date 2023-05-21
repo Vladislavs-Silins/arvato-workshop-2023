@@ -4,8 +4,6 @@ import { Component, ViewEncapsulation } from '@angular/core';
   selector: 'workshop2023-grid',
   templateUrl: './grid.component.html',
   styleUrls: ['./grid.component.scss'],
-  encapsulation: ViewEncapsulation.Emulated
+  encapsulation: ViewEncapsulation.Emulated,
 })
-export class GridComponent {
-
-}
+export class GridComponent {}

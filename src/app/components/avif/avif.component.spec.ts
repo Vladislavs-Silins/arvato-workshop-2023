@@ -8,7 +8,7 @@ describe('AvifComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [AvifComponent]
+      declarations: [AvifComponent],
     });
     fixture = TestBed.createComponent(AvifComponent);
     component = fixture.componentInstance;

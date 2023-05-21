@@ -4,8 +4,6 @@ import { Component, ViewEncapsulation } from '@angular/core';
   selector: 'workshop2023-where',
   templateUrl: './where.component.html',
   styleUrls: ['./where.component.scss'],
-  encapsulation: ViewEncapsulation.Emulated
+  encapsulation: ViewEncapsulation.Emulated,
 })
-export class WhereComponent {
-
-}
+export class WhereComponent {}

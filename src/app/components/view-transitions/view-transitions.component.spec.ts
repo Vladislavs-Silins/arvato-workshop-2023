@@ -8,7 +8,7 @@ describe('ViewTransitionsComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [ViewTransitionsComponent]
+      declarations: [ViewTransitionsComponent],
     });
     fixture = TestBed.createComponent(ViewTransitionsComponent);
     component = fixture.componentInstance;

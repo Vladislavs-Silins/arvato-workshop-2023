@@ -8,7 +8,7 @@ describe('HasDivsComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [HasDivsComponent]
+      declarations: [HasDivsComponent],
     });
     fixture = TestBed.createComponent(HasDivsComponent);
     component = fixture.componentInstance;
