@@ -14,5 +14,5 @@ export const appRoutes: Route[] = [
   { path: 'has-divs', component: HasDivsComponent },
   { path: 'where', component: WhereComponent },
   { path: 'container', component: ContainerComponent },
-  { path: 'view-transition', component: ViewTransitionDemoComponent },
+  { path: 'view-transitions', component: ViewTransitionDemoComponent },
 ];
