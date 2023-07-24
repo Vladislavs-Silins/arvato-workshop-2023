@@ -11,4 +11,5 @@ import { NxWelcomeComponent } from './nx-welcome.component';
 })
 export class AppComponent {
   title = 'workshop2023';
+  description = 'Things You Should Know About Frontend Development in 2022';
 }
