@@ -10,11 +10,11 @@ import { StartingPageComponent } from './components/starting-page/starting-page.
 
 export const appRoutes: Route[] = [
   { path: '', component: StartingPageComponent },
-  { path: 'grid', component: GridComponent },
   { path: 'avif', component: AvifComponent },
+  { path: 'where', component: WhereComponent },
   { path: 'has', component: HasComponent },
   { path: 'has-divs', component: HasDivsComponent },
-  { path: 'where', component: WhereComponent },
   { path: 'container', component: ContainerComponent },
   { path: 'view-transitions', component: ViewTransitionDemoComponent },
+  { path: 'grid', component: GridComponent },
 ];
